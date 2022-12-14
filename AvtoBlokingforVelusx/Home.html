@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Auto locking system</title>
+    <style>
+        .TopText {
+            padding: 20px 20px;
+            font-size: 28px;
+        }
+
+        .DataStatus {
+            /*border: 1px solid green;*/
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            width: 800px;
+            height: auto;
+        }
+
+        .DataCheng {
+            /*border: 1px solid green;*/
+            padding-bottom: 15px;
+            height: auto;
+        }
+
+        .mainBlock {
+            /*border: 1px solid red;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 800px;
+            height: auto;
+        }
+
+        .Midel {
+            border-bottom: 1px solid red;
+            border-top: 1px solid red;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 800px;
+            height: auto;
+        }
+
+        .signex {
+            font-size: 14px;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        .Bootom {
+            /*border: 1px solid red;*/
+            display: flex;
+            justify-content: flex-end;
+            width: 800px;
+            height: auto;
+        }
+
+        .FormTitel {
+            margin-left: 10px;
+        }
+        .buttom {
+            font-size: 12px;
+            margin-bottom: 2px;
+            margin-top: 2px;
+            width: 100%;
+        }
+        .ShowStatus{
+            display:block;
+            text-align:center;
+        }
+
+        body {
+            border: 2px double rgb(0, 0, 0);
+            width: 800px;
+            margin: 0 auto;
+            height: 470px;
+        }
+    </style>
+    <!--<link type="text/css" rel="stylesheet" href="Style_Home.css">-->
+    <script type="text/javascript" src="Script_Home.js"></script>
+</head>
+<body>
+    
+    <div id="top" class="mainBlock">
+        <h1 class="TopText">Auto locking system for station TouchUp for Velux.</h1>
+        <img src="Jabil_Logo.jpg" alt="Jabil_Logo" width="400" height="100" />
+    </div>
+    <div id="midel" class="Midel"> 
+        <div id="data_mask" class="DataCheng" style="width:50%;">
+            <form method="post">
+                <h2 class="FormTitel">Mask of products:</h2>
+                <div style="display: flex; justify-content:space-between;">
+                    <div>
+                        <select id="ListMasks" name="Masks" size="5" style="width:157px; font-size:16px; margin-left:10px;"></select>
+                    </div>
+                    <div style="display: block; align-items: center; justify-content: center; margin-right:50px;">
+                        <div>
+                            <input  id="TextMask" type="text" value="" style="width:170px; font-size:16px;">
+                        </div>
+                        <div style="display: block; margin-top:7px;">
+                            <input  type="button" value="Add" class="buttom" >
+                            <input  type="button" value="Remove" class="buttom" >
+                            <input  type="button" value="Save data" class="buttom" >
+                        </div>
+                    </div>
+                </div>
+                <div style="display:flex; justify-content: flex-start;">
+                    <h3 class="FormTitel">Time delay:</h3>
+                    <h3 id ="TimeDelayValue" style="padding-left:30px;">value#4</h3>
+                </div>
+                <div>
+                    <div class="slidecontainer">
+                        <input id="TimeDelayRange" type="range" min="1" max="1500" value="1200" class="slider" style="width:350px;">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="status" class="DataStatus" style="display: flex; width:40%;">
+            <div style="display: block; width:60%;">
+                <div >
+                    <h2 id="Status">Status:</h2>
+                </div>
+                <div>
+                    <h3>Rele:</h3>
+                </div>
+                <div>
+                    <h3>Time to change status:</h3>
+                </div>
+                <div>
+                    <h3>Last scanning:</h3>
+                </div>
+            </div>
+            <div style="display: block; width:40%;">
+                <div class="ShowStatus">
+                    <h3 id="Rele" style="margin: 0px 30px;">value#1</h3>
+                </div>
+                <div class="ShowStatus"> 
+                    <h3 id="TimeToCheng">value#2</h3>
+                </div>
+                <div class="ShowStatus">
+                    <h3 id="LastScan">value#3</h3>
+                </div>
+            </div>
+        </div>
+   
+    </div>
+    <div id="boton" class="Bootom" style="display: flex;">
+        <div>
+            <h3 class="signex">Developer: Petro Kalushka.</h3>
+            <h3 class="signex">Call: +380983852879.</h3>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿body
+{
+}
+div{
+    width: 100%;
+    border: 1px solid red;
+}
+.menu1 {
+    width: 750px;
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+ol.menu1 li{
+    display:inline;
+    margin:3px 30px;
+    background-color:black;
+    font-size:2em;
+    color:#fff;
+}
+.menu2{
+
+}
